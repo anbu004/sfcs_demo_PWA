@@ -1,0 +1,43 @@
+
+{
+    "short_name": "angular-admin-lte",
+    "name": "Angular 5.0 Hacker News PWA",
+    "start_url": "/",
+
+    "theme_color": "#f48c5b",
+    "background_color": "#ffffff",
+
+    "display": "standalone",
+    "orientation": "portrait",
+
+    "icons": [
+        {
+            "src": "/assets/icons/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "scripts": {
+    "test": "webpack --config ./example/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neal1991/pwa-manifest-generator.git"
+  },
+  "keywords": [
+    "pwa",
+    "webpack",
+    "plugin"
+  ],
+  "author": "neal1991",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neal1991/pwa-manifest-generator/issues"
+  },
+  "homepage": "https://github.com/neal1991/pwa-manifest-generator#readme",
+  "dependencies": {
+    "mime": "^1.3.6",
+    "webpack": "^2.5.1"
+  }
+
+}

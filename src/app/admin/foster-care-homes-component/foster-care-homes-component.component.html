@@ -1,0 +1,268 @@
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+    <h1>
+        Faster Care Homes
+      <small>Control panel</small>
+    </h1>
+    <ol class="breadcrumb">
+      <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+      <li class="active">Dashboard</li>
+    </ol>
+  </section>
+  <!-- Main content -->
+  <section class="content">
+      
+    <form  (ngSubmit)="onSubmit()">
+      <div class="box box-success">
+          <div class="box-header">
+            <i class="fa fa-comments-o"></i>
+            <h3 class="box-title">Foster/Kinship Family Team Contact Information</h3>
+          </div>
+          <div class="box-body chat" id="chat-box">
+              <div class="row">
+<div class="col-md-6">
+    <div class="form-group">
+        <label for="name">Client Name</label>
+        <input type="text" class="form-control" [(ngModel)]="fosterCareHomes.client_name"name="client_name" id="client_name" required>
+      </div>
+      <div class="form-group">
+          <label for="name">Date of Placement</label>
+          <input type="text" class="form-control" [(ngModel)]="fosterCareHomes.date_of_placement" name="date_of_placement" id="date_of_placement" required>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="name">Time/Length: From</label>
+                    <input type="text" class="form-control" name="from_time" id="from_time"  [(ngModel)]="fosterCareHomes.from_time"  required>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <label for="name">Time/Length: To</label>
+                      <input type="text" class="form-control" [(ngModel)]="fosterCareHomes.to_time" name="to_time" id="to_time"  required>
+                    </div>
+                </div>
+        </div>
+        <div class="form-group">
+            <label for="name">Foster Care Worker</label>
+            <input type="text" class="form-control"  [(ngModel)]="fosterCareHomes.foster_care_worker" 
+            name="foster_care_worker" id="foster_care_worker" required>
+          </div>
+          <div class="form-group">
+              <label for="name">Kinship Worker</label>
+              <input type="text" class="form-control" id="name"  
+              [(ngModel)]="fosterCareHomes.kinship_worker" name="kinship_worker" id="kinship_worker" required>
+            </div>
+            <div class="form-group">
+                <label for="name">Licensed Permanency Specialist</label>
+                <input type="text" class="form-control" 
+                [(ngModel)]="fosterCareHomes.licence_perm_specilist"name="licence_perm_specilist" id="licence_perm_specilist" required>
+              </div>
+              <div class="form-group">
+                  <label for="name">List those present at visit</label>
+                  <input type="text" class="form-control"
+                   [(ngModel)]="fosterCareHomes.list_those_present_at_visit" name="list_those_present_at_visit" id="list_those_present_at_visit" required>
+                </div>
+</div>
+<div class="col-md-6">
+    <div class="form-group">
+        <label for="alterEgo">Case Manager</label>
+        <input type="text" class="form-control" [(ngModel)]="fosterCareHomes.case_manager" name="case_manager" id="case_manager">
+      </div>
+      <div class="form-group">
+          <label for="alterEgo">Date of Completion</label>
+          <input type="text" class="form-control" [(ngModel)]="fosterCareHomes.date_of_completion" 
+          name="date_of_completion" id="date_of_completion">
+        </div>
+        <div class="form-group">
+            <label for="alterEgo">Provider Name</label>
+            <input type="text" class="form-control" [(ngModel)]="fosterCareHomes.provider_name"  
+            name="provider_name" id="provider_name">
+          </div>
+          <div class="form-group">
+              <label for="alterEgo">Personal Type</label>
+              <input type="text" class="form-control" [(ngModel)]="fosterCareHomes.personal_type" 
+               name="personal_type" id="personal_type">
+            </div>
+            <div class="form-group">
+                <label for="name">Completed By</label>
+                <input type="text" class="form-control" [(ngModel)]="fosterCareHomes.completed_by"
+                 name="completed_by" id="completed_by"  required>
+              </div>
+              <div class="form-group">
+                  <label for="name">Family Support Worker</label>
+                  <input type="text" class="form-control" [(ngModel)]="fosterCareHomes.family_support_worker" 
+                   name="family_support_worker" id="family_support_worker" required>
+                </div>
+  </div>
+                </div>
+             
+           
+                
+          </div>
+          <div class="box-header">
+              <i class="fa fa-comments-o"></i>
+              <h3 class="box-title">1. Seven-Day Success Needs</h3>
+            </div>
+            <div class="box-body chat" id="chat-box">
+               
+                <div class="form-group">
+                    <label for="name">1. What medications does the child have that need to be refilled?</label>
+                    <textarea class="form-control" name="medication_child_refilled" id="medication_child_refilled"
+                     [(ngModel)]="fosterCareHomes.medication_child_refilled"></textarea>
+                  </div>
+             
+                  <div class="form-group">
+                      <label for="name">2. What needs do you (foster parent/kinship parent) have that SFCS can assist with in the first 7 days of
+                          placement?</label>
+                      <textarea class="form-control" [(ngModel)]="fosterCareHomes.parent_sfcs_assist" 
+                       name="parent_sfcs_assist" id="parent_sfcs_assist" ></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">3. Has the child had their KBH, Vision, and Dental Appointments scheduled? (If no, they need to be
+                            scheduled in the first 7 days)</label>
+                        <textarea class="form-control"  [(ngModel)]="fosterCareHomes.child_had_visin_dentel" 
+                        name="child_had_visin_dentel" id="child_had_visin_dentel"></textarea>
+                      </div>
+            </div>
+
+            <div class="box-header">
+                <i class="fa fa-comments-o"></i>
+                <h3 class="box-title">2. Crisis Support Plan</h3>
+              </div>
+              <div class="box-body chat" id="chat-box">
+                 
+                  <div class="form-group">
+                      <label for="name">Emergency After Hours Contacts:</label>
+                      <label for="name"><i>Sponsoring Agency on Call, CMHC, etc:</i></label>
+                      <input type="text" class="form-control" [(ngModel)]="fosterCareHomes.emergency_sponsering_agency" name="emergency_sponsering_agency" id="emergency_sponsering_agency" required>
+                      <label for="name"><i>SFCS On-Call Phone Number:<b>1-(888) SFA-HOPE</b></i> </label>
+                    </div>
+               
+                    <div class="form-group">
+                        <label for="name">2. What are specific de-escalation tactics that work for the child?
+                            </label>
+                        <textarea class="form-control"  [(ngModel)]="fosterCareHomes.spec_de_escaalation_tactis" name="spec_de_escaalation_tactis" id="spec_de_escaalation_tactis"></textarea>
+                      </div>
+  
+                      <div class="form-group">
+                          <label for="name">3. What community resources are available for the Foster/Kinship Home to utilize in times of crisis?</label>
+                          <textarea class="form-control" [(ngModel)]="fosterCareHomes.community_foster_kinship" 
+                          name="community_foster_kinship" id="community_foster_kinship"></textarea>
+                        </div>
+              </div>
+              <div class="box-header">
+                  <i class="fa fa-comments-o"></i>
+                  <h3 class="box-title">3. Appointment Plan</h3>
+                </div>
+                <div class="box-body chat" id="chat-box">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="name">Appointment Type: </label>
+                                <input type="text" class="form-control"name="appointment_type" id="appointment_type" [(ngModel)]="fosterCareHomes.appointment_type"  id="name" required>
+                              </div>
+                              <!-- <div class="form-group">
+                                  <input type="text" class="form-control"  [(ngModel)]="fosterCareHomes."  id="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control"  [(ngModel)]="fosterCareHomes." id="name" required>
+                                  </div> -->
+                          </div>
+                          <div class="col-md-3">
+                              <div class="form-group">
+                                  <label for="name">Child: </label>
+                                  <input type="text" class="form-control" [(ngModel)]="fosterCareHomes.child_name"
+                                  name="child_name" id="child_name" required>
+                                </div>
+                                <!-- <div class="form-group">
+                                    <input type="text" class="form-control" [(ngModel)]="fosterCareHomes."  id="name" required>
+                                  </div>
+                                  <div class="form-group">
+                                      <input type="text" class="form-control"  [(ngModel)]="fosterCareHomes." id="name" required>
+                                    </div> -->
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="name">Day of the Week/Time</label>
+                                    <input type="text" class="form-control"  [(ngModel)]="fosterCareHomes.day_of_week_time"
+                                     name="day_of_week_time" id="day_of_week_time" required>
+                                  </div>
+                                  <!-- <div class="form-group">
+                                      <input type="text" class="form-control" [(ngModel)]="fosterCareHomes."  id="name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" [(ngModel)]="fosterCareHomes."  id="name" required>
+                                      </div> -->
+                              </div>
+                              <div class="col-md-3">
+                                  <div class="form-group">
+                                      <label for="name">Location:</label>
+                                      <input type="text" class="form-control" [(ngModel)]="fosterCareHomes.location"
+                                      name="location" id="location" required>
+                                    </div>
+                                    <!-- <div class="form-group">
+                                        <input type="text" class="form-control" [(ngModel)]="fosterCareHomes."  id="name" required>
+                                      </div>
+                                      <div class="form-group">
+                                          <input type="text" class="form-control"  [(ngModel)]="fosterCareHomes." id="name" required>
+                                        </div> -->
+                                </div>
+                        
+                        </div>
+                  </div>
+                  <div class="box-header">
+                      <i class="fa fa-comments-o"></i>
+                      <h3 class="box-title">2. Crisis Support Plan</h3>
+                    </div>
+                    <div class="box-body chat" id="chat-box">
+                       
+      
+                            <label for="name"><i>Saint Francis Community Services is committed to communicate changes to visits, appointments, and court
+                                hearings as soon as possible. When there is a cancellation, SFCS will reschedule these within 24 hours and
+                                inform you of the changes. In order to do this successfully, we request your preferred method of
+                                communication (phone call, text, etc.) and phone number.
+                                </i></label>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="name">1. Preferred method of communication: </label>
+                                            <input type="text" [(ngModel)]="fosterCareHomes.prefer_method_of_communication"  name="prefer_method_of_communication" id="prefer_method_of_communication"  class="form-control" id="name" required>
+                                          </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <div class="form-group">
+                                                  <label for="name">2. Preferred Contact Phone Number: </label>
+                                                  <input type="text" [(ngModel)]="fosterCareHomes.prefer_contact_phone_num"  
+                                                  class="form-control" name="prefer_contact_phone_num" id="prefer_contact_phone_num" required>
+                                                </div>
+                                                </div>
+                                        </div>
+                                        <label for="name"><i>As foster parents/kinship parents, you have a right to attend court hearings, case plans, and submit letters to
+                                            the court. Please contact your foster child's case manager if you have any questions regarding this process.
+                                            </i></label>
+                                            <div class="form-group">
+                                                <label for="name">1. If you foster children are school aged, when are the days school is not in session due to in-services,
+                                                    vacations, etc., what are the child care plans for those days?
+                                                    </label>
+                                                <textarea class="form-control" [(ngModel)]="fosterCareHomes.foster_chilren_aged" 
+                                                name="foster_chilren_aged" id="foster_chilren_aged"></textarea>
+                                              </div>
+                          
+                                              <div class="form-group">
+                                                  <label for="name">2.
+                                                      Tuesdays, 2pm-3pm
+                                                      If your child attends daycare, when does the child have daycare outings, if any?
+                                                      </label>
+                                                  <textarea class="form-control"[(ngModel)]="fosterCareHomes.child_attends_daycare"name="child_attends_daycare" id="child_attends_daycare"></textarea>
+                                                </div>
+                 </div>      
+          <div class="box-footer">
+              <button type="submit" class="btn btn-success">Submit</button>
+          </div>
+        </div>
+        </form>
+    </section></div>

@@ -1,0 +1,30 @@
+export class FosterCareHomes {
+    client_name: string;
+date_of_placement: string;
+from_time: string;
+to_time: string;
+foster_care_work: string;
+kinship_worker: string;
+licence_perm_specilist: string;
+list_those_present_at_visit: string;
+case_manager: string;
+date_of_completion: string;
+provider_name: string;
+personal_type: string;
+completed_by: string;
+family_support_worker: string;
+medication_child_refilled: string;
+parent_sfcs_assist: string;
+child_had_visin_dentel: string;
+emergency_sponsering_agency: string;
+spec_de_escaalation_tactis: string;
+community_foster_kinship: string;
+appointment_type: string;
+child_name: string;
+day_of_week_time: string;
+location: string;
+prefer_method_of_communication: string;
+prefer_contact_phone_num: string;
+foster_chilren_aged: string;
+child_attends_daycare: string;
+}
